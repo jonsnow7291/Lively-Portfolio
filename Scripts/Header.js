@@ -1,6 +1,6 @@
 const  boton = document.getElementById("button-toogle");
 const menu = document.getElementById("menu-list");
-const header = document.getElementById("main-header");
+const header = document.getElementById("site-header");
 
 boton.addEventListener("click", () => {
     menu.classList.toggle("showOptions");

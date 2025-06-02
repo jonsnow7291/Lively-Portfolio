@@ -1,0 +1,38 @@
+:root{
+    /*? aqui estan los colores globales de las paginas*/
+    --color-primary:#613583;
+    --color-secondary:#7D8235;
+    --color:#35823A;
+    
+    /*? aqui estan los colores de los componentes transversales */
+    /*TODO colores Footer*/
+    --color-Footer:rgb(58, 40, 77);
+    --color-Footer-letras:rgb(233, 233, 233);
+    --color-Footer-enlaces:rgb(129, 87, 228);
+        /*!reacciones de Footer */
+        --color-Footer-enlaces-hover:rgb(169, 214, 160);
+
+    /*TODO colores Header*/
+    --color-Header:rgb(58, 40, 77);
+    --color-Header-enlaces:rgb(233, 233, 233);
+        /*!reacciones de Header */
+        --color-Header-enlaces-hover:rgb(37, 153, 52);
+        /*!button de Header */
+        --color-Header-barras-button:rgb(65, 34, 150);
+        --color-Header-fondo-button:rgb(134, 111, 172);
+        --color-Header-borde-button:rgb(110, 76, 202);
+        /*!reacciones button de Header */
+        --color-Header-fondo-button-hover:rgb(156, 127, 235);
+
+
+    /*? colores de lenguajes de programacion*/
+    --color-html: rgb(247, 113, 3);
+    --color-css:rgb(3, 117, 247);
+    --color-js:rgb(251, 255, 3);  
+    --color-python:rgb(0, 0, 0);
+    --color-java:rgb(255, 255, 255);
+    --color-c:rgb(0, 0, 0);
+    --color-cpp:rgb(0, 0, 0);  
+
+}
+
