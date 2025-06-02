@@ -12,7 +12,7 @@ header{
     margin: 2% 5%;
     border-radius: 20px;
     top: 23px;
-    background-color: rgb(55, 38, 73);
+    background-color: rgb(58, 40, 77);
 }
 .logo{
     width: 10%;
@@ -37,7 +37,7 @@ li{
 a{
     text-decoration: none;
     color: white;
-    
+
 }
 button{
     position: absolute;
@@ -45,7 +45,8 @@ button{
 }
 a:hover{
     text-decoration: none;
-    color: white;
+    color: rgb(169, 214, 160);
+    transition: 0.5s;
 }
 @media (max-width: 768px) {
     button{
@@ -58,23 +59,38 @@ a:hover{
         width: 10%;
         color: rgb(68, 0, 255);
         background-color:rgb(134, 111, 172);
-        border:none;
+        padding: 0 10px;
+        border: 1px solid rgb(110, 76, 202);
         border-radius: 10px;
     }
+    button:hover{
+        background-color: rgb(110, 76, 202);
+        color: white;
+        transition: 0.5s;
+    }
     ul{
-        display: none;
-        flex-direction: column;
+        display: flex;
+        overflow: hidden;
+        max-height: 0;
         position: absolute;
         right: 5%;
         top: 16.8%;
         background-color: rgb(87, 60, 116);
         width: 90%;
-        padding: 20px;
         border-radius: 10px;
         align-items: center;
+        transition: max-height 0.4s ease, padding 0.3s ease;
+        flex-direction: column;
     }
-    nav>ul.show{
+    nav>ul.showOptions{
         display: flex;
+        max-height: 500px;
+        padding: 10px 20px;
+        border-radius: 0 0 10px 10px;
+
+    }
+    header.headerActive{
+        border-radius: 20px 20px 0 0;
     }
 
 }
