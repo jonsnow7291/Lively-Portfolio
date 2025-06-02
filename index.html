@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="/Styles/Header.css">
     <meta charset="UTF-8">
     <meta name="viewport" content= "width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <!--aqui ira  el nav bar-->
-    <header>
-        
-    </header>
+    <div id="main-header"></div>
     <main>
 
     </main>
@@ -21,4 +20,12 @@
     </footer>
     
 </body>
+<script>
+    fetch("/Components/header.html")
+    .then(response=>response.text())
+    .then(html=>{
+        document.getElementById("main-header").innerHTML=html;
+    })
+</script>
+<script src="/Scripts/Header.js"></script>
 </html>
