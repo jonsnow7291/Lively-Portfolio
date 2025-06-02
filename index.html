@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="/Styles/Header.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <!--aqui ira  el nav bar-->
     <div id="main-header"></div>
@@ -15,17 +16,25 @@
     <aside>
 
     </aside>
-    <footer>
-
-    </footer>
-    
+    <div id="footer"></div>
 </body>
 <script>
     fetch("/Components/header.html")
-    .then(response=>response.text())
-    .then(html=>{
-        document.getElementById("main-header").innerHTML = html;
-    })
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById("main-header").innerHTML = html;
+        })
+        .catch(error => {
+            console.error("Error loading header:", error);
+        });
+
+    fetch("/Components/footer.html")
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById("footer").innerHTML = html;
+        }).catch(error => {
+            console.error("Error loading footer:", error);
+        });
 </script>
-<script src="/Scripts/Header.js"></script>
+
 </html>
