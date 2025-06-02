@@ -1,7 +1,80 @@
-header>.navbar{
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    width: 90%;
+    height: 15%;
+    margin: 2% 5%;
+    border-radius: 20px;
+    top: 23px;
+    background-color: rgb(55, 38, 73);
+}
+.logo{
+    width: 10%;
+    height: 15%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    background-color: #333;
+    position:absolute;
+}
+ul{
+    display: flex;
+    gap: 4%;
+    list-style: none;
+    position: absolute;
+    top: 9%;
+    right: 10%;
+}
+li{
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+button{
+    position: absolute;
+    display: none;
+}
+a:hover{
+    text-decoration: none;
+    color: white;
+}
+@media (max-width: 768px) {
+    button{
+        display: block;
+        width: 20%;
+        height: 40px;
+        position: absolute;
+        right: 11%;
+        top: 7%;
+        width: 10%;
+        color: rgb(68, 0, 255);
+        background-color:rgb(134, 111, 172);
+        border:none;
+        border-radius: 10px;
+    }
+    ul{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 5%;
+        top: 16.8%;
+        background-color: rgb(87, 60, 116);
+        width: 90%;
+        padding: 20px;
+        border-radius: 10px;
+        align-items: center;
+    }
+    nav>ul.show{
+        display: flex;
+    }
+
 }
