@@ -27,7 +27,7 @@ header{
     display: flex;
     position:absolute;
 }
-ul{
+.menu-list{
     display: flex;
     gap: 4%;
     list-style: none;
@@ -35,7 +35,7 @@ ul{
     top: 9%;
     right: 10%;
 }
-li{
+.navlinks{
     font-size: 1.2rem;
     font-weight: 500;
     cursor: pointer;
