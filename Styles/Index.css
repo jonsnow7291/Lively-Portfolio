@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #a89292;
-    color: #333;
+    background-color: var(--color-body-bg);
+    color: var(--color-body-text);
 }
 .main-container{
     position: relative; /* Cambiado de absolute a relative */
@@ -13,16 +13,16 @@ body{
     min-height: 400px;  /* Altura mínima para asegurar visibilidad */
     left: 5%;
     border-radius: 10px;
-    background-color: rgb(141, 132, 119);
+    background-color: var(--color-main-container-bg);
     margin-top: 40px;   /* Espacio desde arriba */
-    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 24px var(--color-main-container-shadow);
 }
 .img-container{
     position: relative; /* Cambiado de absolute a relative */
     height: auto; /* Permite que crezca según el contenido */
     width: 50%;
     min-height: 0;
-    background-color: aqua;
+    background-color: var(--color-img-container-bg);
     border-radius: 10px 0 0 10px;
     display: flex;
     align-items: stretch;
@@ -88,16 +88,16 @@ body{
     top: 50%;
     transform: translateY(-50%);
     z-index: 9999;
-    background: var(--color-Header-fondo-button, rgba(30,30,30,0.55));
-    color: var(--color-Header-enlaces, #fff);
-    border: 3px solid var(--color-Header-borde-button, #ffd700);
+    background: var(--color-carousel-bg);
+    color: var(--color-carousel-text);
+    border: 3px solid var(--color-carousel-border);
     padding: 0;
     width: 56px;
     height: 56px;
     font-size: 2.5rem;
     cursor: pointer;
     border-radius: 50%;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+    box-shadow: 0 4px 16px var(--color-carousel-shadow);
     opacity: 0.92;
     transition: background 0.2s, color 0.2s, box-shadow 0.2s, border 0.2s, transform 0.15s;
     outline: none;
@@ -107,10 +107,10 @@ body{
     user-select: none;
 }
 .carousel-button:hover, .carousel-button:focus {
-    background: var(--color-Header-fondo-button-hover, #7D8235);
-    color: var(--color-Header-barras-button, #222);
-    border: 3px solid var(--color-Header-barras-button, #222);
-    box-shadow: 0 6px 24px rgba(0,0,0,0.35);
+    background: var(--color-carousel-bg-hover);
+    color: var(--color-carousel-text-hover);
+    border: 3px solid var(--color-carousel-border-hover);
+    box-shadow: 0 6px 24px var(--color-carousel-shadow-hover);
     transform: translateY(-50%) scale(1.08);
 }
 
