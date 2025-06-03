@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/Assets/Colors/Colors.css">
+    <link rel="stylesheet" href="/Styles/Index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
 </head>
@@ -10,11 +12,48 @@
 <body>
     <!--aqui ira  el nav bar-->
     <div id="main-header"></div>
-    <main>
+    <main class="main-container">
+        <div class="slider-container">
+            <div class="carousel" id="carousel">
+                <div class="carousel-item">
+                    <div class="img-container">
+                        <img src="/Assets/img/Screen Shot 2025-06-01 at 19.34.00.png" alt="Logo" class="logo">
+                    </div>
+                    <div class="text-container">
+                        <h1>proyectos recientes</h1>
+                        <p>Este es un ejemplo de una página de inicio simple.</p>
+                        <p>Utiliza HTML, CSS y JavaScript para crear una experiencia interactiva.</p>
+                    </div>
+                </div>
 
+                <div class="carousel-item">
+                    <div class="img-container">
+                        <img src="/Assets/img/Screen Shot 2025-06-01 at 19.34.00.png" alt="Logo" class="logo">
+                    </div>
+                    <div class="text-container">
+                        <h1>proyectos recientes</h1>
+                        <p>Este es un ejemplo de una página de inicio simple.</p>
+                        <p>Utiliza HTML, CSS y JavaScript para crear una experiencia interactiva.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="img-container">
+                        <img src="/Assets/img/Screen Shot 2025-06-01 at 19.34.00.png" alt="Logo" class="logo">
+                    </div>
+                    <div class="text-container">
+                        <h1>proyectos recientes</h1>
+                        <p>Este es un ejemplo de una página de inicio simple.</p>
+                        <p>Utiliza HTML, CSS y JavaScript para crear una experiencia interactiva.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-button prev" id="prevBtn">&#10094;</button>
+            <button class="carousel-button next" id="nextBtn">&#10095;</button>
+        </div>
     </main>
-    <aside>
 
+    <aside>
     </aside>
     <div id="footer"></div>
 </body>
@@ -23,7 +62,7 @@
         .then(response => response.text())
         .then(html => {
             document.getElementById("main-header").innerHTML = html;
-                        // Cargar y ejecutar el script después de insertar el header
+            //! Cargar y ejecutar el script después de insertar el header
             const script = document.createElement('script');
             script.src = "/Scripts/Header.js";
             document.body.appendChild(script);
@@ -39,5 +78,6 @@
             console.error("Error loading footer:", error);
         });
 </script>
+<script src="/Scripts/Index.js"></script>
 
 </html>
