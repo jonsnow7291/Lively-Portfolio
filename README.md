@@ -1,6 +1,13 @@
-# 🧑‍💻 Portafolio de Desarrollador Web
+# 🧑‍💻 Lively Portfolio
 
-Este es mi primer portafolio profesional. Aquí encontrarás mis proyectos en las diferentes tecnologías que he aprendido.
+Este es mi portafolio profesional como desarrollador web. Aquí podrás ver mis proyectos, tecnologías dominadas y formas de contacto, todo con una estructura modular y personalizable.
+
+---
+
+## 🌐 Despliegue
+
+Puedes ver el portafolio en línea aquí:  
+[https://livelyportfolio-jslbh.ondigitalocean.app/](https://livelyportfolio-jslbh.ondigitalocean.app/)
 
 ---
 
@@ -8,14 +15,14 @@ Este es mi primer portafolio profesional. Aquí encontrarás mis proyectos en la
 
 ```plaintext
 Lively-Portfolio/
-├── [index.html](http://_vscodecontentref_/0)                     ← Página principal
+├── index.html                         ← Página principal (landing page)
 ├── LICENSE
-├── [README.md](http://_vscodecontentref_/1)
+├── README.md
 ├── .vscode/
-│   └── [settings.json](http://_vscodecontentref_/2)
+│   └── settings.json
 ├── Assets/
 │   ├── Colors/
-│   │   └── [Colors.txt](http://_vscodecontentref_/3)
+│   │   └── Colors.css                 ← Variables globales de color (centralizadas)
 │   ├── fonts/
 │   ├── icons/
 │   │   ├── Logo Heador.png
@@ -24,30 +31,61 @@ Lively-Portfolio/
 │   │   ├── Components/
 │   │   │   └── list.svg
 │   │   └── Slogans/
-│   │       └── [Slogans.md](http://_vscodecontentref_/4)
+│   │       └── Slogans.md
 │   └── img/
 ├── Components/
-│   ├── [footer.html](http://_vscodecontentref_/5)
-│   └── [header.html](http://_vscodecontentref_/6)
+│   ├── footer.html                    ← Pie de página reutilizable
+│   └── header.html                    ← Barra de navegación reutilizable
 ├── Pages/
-│   ├── [aboutme.html](http://_vscodecontentref_/7)
-│   ├── [contact.html](http://_vscodecontentref_/8)
-│   ├── [projects.html](http://_vscodecontentref_/9)
-│   └── [testimonies.html](http://_vscodecontentref_/10)
+│   ├── aboutme.html
+│   ├── contact.html
+│   ├── projects.html
+│   └── testimonies.html
 ├── Scripts/
-│   ├── [Header.js](http://_vscodecontentref_/11)
-│   └── [Index.js](http://_vscodecontentref_/12)
+│   ├── Header.js                      ← Lógica del menú responsive
+│   └── Index.js                       ← Lógica del carrusel principal
 └── Styles/
-    ├── [Header.css](http://_vscodecontentref_/13)
-    └── [Index.css](http://_vscodecontentref_/14)
-🚀 Características
-Navegación modular con componentes reutilizables (header.html, footer.html)
-Responsive design con CSS personalizado
-Separación de recursos estáticos (imágenes, íconos, fuentes, colores)
-Scripts para interacción dinámica del menú
-Estructura clara para escalabilidad y mantenimiento
-📦 Instalación y uso
-Clona el repositorio:
-Abre el archivo index.html en tu navegador para ver el portafolio.
-📝 Licencia
+    ├── Footer.css
+    ├── Header.css
+    └── Index.css
+```
+
+---
+
+## 🚀 Características
+
+- **Navegación modular:** Header y footer como componentes reutilizables en todas las páginas.
+- **Colores centralizados:** Toda la colorimetría se gestiona desde `Assets/Colors/Colors.css` usando variables CSS.
+- **Diseño responsive:** Adaptado a dispositivos móviles y escritorio.
+- **Carrusel interactivo:** En la página principal, con botones personalizados y colores configurables.
+- **Separación de recursos:** Imágenes, íconos, fuentes y colores organizados por carpetas.
+- **Scripts para interacción:** Menú hamburguesa y slider funcionales con JavaScript.
+- **Fácil personalización:** Cambia colores y estilos editando solo el archivo de variables.
+- **Licencia MIT:** Uso libre y abierto.
+
+---
+
+## 🛠️ Tecnologías usadas
+
+- **HTML5** y **CSS3** (con variables CSS)
+- **JavaScript** (vanilla)
+- **Estructura modular** para componentes reutilizables
+
+---
+
+## 📦 Instalación y uso
+
+1. **Clona el repositorio:**
+   ```sh
+   git clone https://github.com/jonsnow7291/Lively-Portfolio.git
+   ```
+2. **Abre el archivo `index.html` en tu navegador** para ver el portafolio.
+3. **Personaliza los colores** editando `Assets/Colors/Colors.css`.
+
+---
+
+## 📝 Licencia
+
 Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
+
+---
