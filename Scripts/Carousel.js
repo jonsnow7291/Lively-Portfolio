@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+function iniciarCarousel(){
   let currentIndex = 0;
   const carousel = document.getElementById("carousel");
   const items = document.querySelectorAll(".carousel-item");
@@ -18,4 +18,5 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   updateCarousel();
-});
+};
+window.iniciarCarousel = iniciarCarousel;

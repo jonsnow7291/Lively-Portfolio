@@ -94,8 +94,8 @@ header a:hover{
     header #button-toogle{
         display: block;
         cursor: pointer;
-        width: 50%;
-        height: 50%;
+        width: 20vh;
+        height: 5vh;
         position: relative;
         color: var(--color-Header-barras-button);
         background-color: var(--color-Header-fondo-button);
@@ -118,7 +118,7 @@ header a:hover{
         align-items: center;
         transition: max-height 0.5s ease, padding 0.3s ease;
         left: 0;
-        top: 15vh;
+        top: 14vh;
         width: 90vw;
         z-index: 1000;
         left: 5%;
@@ -126,6 +126,7 @@ header a:hover{
     .menu-list.showOptions{
         max-height: 200px;
         border-radius: 0 0 10px 10px;
+        top:14vh;
     }
     header.headerActive{
         border-radius: 20px 20px 0 0;
