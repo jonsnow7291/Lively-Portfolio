@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-
+    <link rel="stylesheet" href="/Styles/Index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
 </head>
+
 <body>
     <!--aqui va  el nav bar-->
     <div id="main-header"></div>
@@ -35,23 +37,23 @@
             console.error("Error loading footer:", error);
         });
     fetch("/Components/carousel.html")
-    .then(response => response.text())
-    .then(html => {
-        document.getElementById("main-carousel").innerHTML = html;
-        const script = document.createElement('script');
-        script.src = "/Scripts/Carousel.js";
-        script.onload = () => {
-            if (typeof iniciarCarousel === 'function') {
-                iniciarCarousel();
-            } else {
-                console.error("initCarousel function is not defined.");
-            }
-        };
-        document.body.appendChild(script);
-    })
-    .catch(error => {
-        console.error("Error loading carousel:", error);
-    });
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById("main-carousel").innerHTML = html;
+            const script = document.createElement('script');
+            script.src = "/Scripts/Carousel.js";
+            script.onload = () => {
+                if (typeof iniciarCarousel === 'function') {
+                    iniciarCarousel();
+                } else {
+                    console.error("initCarousel function is not defined.");
+                }
+            };
+            document.body.appendChild(script);
+        })
+        .catch(error => {
+            console.error("Error loading carousel:", error);
+        });
 </script>
 
 </html>

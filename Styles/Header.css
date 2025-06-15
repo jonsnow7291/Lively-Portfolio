@@ -21,6 +21,7 @@ header{
     background-color: var(--color-Header);
     transition: border-radius 0.5s ease;
     z-index: 1000;
+    margin: 2% 0% 5% 5%;
 }
 header>#header-navbar{
     width: 100%;
@@ -64,7 +65,7 @@ header a{
     color: var(--color-Header-enlaces);
 
 }
-zbutton{
+button{
     position: absolute;
     display: none;
 }
