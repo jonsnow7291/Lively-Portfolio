@@ -2,6 +2,8 @@
 
 .main-container{
     position: relative; /* Cambiado de absolute a relative */
+    overflow: hidden;
+    top: 30vh;
     width: 90%;
     min-height: 400px;  /* Altura mínima para asegurar visibilidad */
     left: 5%;
