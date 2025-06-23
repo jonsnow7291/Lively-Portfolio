@@ -10,32 +10,16 @@
 
 <body>
     <!--aqui va  el nav bar-->
-    <div id="main-header"></div>
+    <main-header id="main-header"></main-header>
     <!--aqui va el carousel-->
     <div id="main-carousel"></div>
     <aside>
     </aside>
-    <div id="footer"></div>
+    <main-footer></main-footer>
 </body>
+<script src="/Components/footer.js"></script>
+<script src="/Components/header.js"></script>
 <script>
-    fetch("/Components/header.html")
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById("main-header").innerHTML = html;
-            const script = document.createElement('script');
-            script.src = "/Scripts/Header.js";
-            document.body.appendChild(script);
-        })
-        .catch(error => {
-            console.error("Error loading header:", error);
-        });
-    fetch("/Components/footer.html")
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById("footer").innerHTML = html;
-        }).catch(error => {
-            console.error("Error loading footer:", error);
-        });
     fetch("/Components/carousel.html")
         .then(response => response.text())
         .then(html => {
@@ -55,5 +39,4 @@
             console.error("Error loading carousel:", error);
         });
 </script>
-
 </html>
